@@ -34,7 +34,7 @@ function! DisplayAudio()
   endif
 endfunction
 
-autocmd BufRead *.png,*.jpg,*.jpeg,*.webp :call DisplayImage()
+autocmd BufRead *.png,*.jpg,*.jpeg,*.webp,*.tiff,*.bmp :call DisplayImage()
 autocmd BufRead *.pdf :call DisplayPDF()
-autocmd BufRead *.mp4,*.avi,*.gif,*.flv :call DisplayVideo()
-autocmd BufRead *.mp3,*.wav,*.ogg :call DisplayAudio()
+autocmd BufRead *.mp4,*.avi,*.gif,*.flv,*.mov :call DisplayVideo()
+autocmd BufRead *.mp3,*.wav,*.ogg,*.aiff,*.asf,*.flac :call DisplayAudio()
